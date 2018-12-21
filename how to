@@ -1,0 +1,44 @@
+how to 
+
+
+criar a pasta desejada-> 
+	mkdir /pastadesejada/
+dar permissoes para a pasta -> 
+	sudo chmod -R 7777 /pastadesejada/
+fazer o clone do repositorio ->
+	git clone https://github.com/enailecr/CAMBOXURA
+instalar o ambiente virtual ->
+	sudo apt-get install python3-venv
+	python3 -m venv myvenv
+	source myvenv/bin/activate
+entrar no repositorio -> 
+	cd CAMBOXURA/
+instalar os seguintes pacotes ->
+	pip3 install django
+	pip3 install django-tables2
+	pip3 install django-bootstrap3
+	pip3 install psutil
+	pip3 install django-crontab
+	pip3 install mysqlclient ///OBS tb funciona com -->> pip install mysqlclient ///
+	python3 manage.py crontab add
+	python3 manage.py runserver
+
+
+
+
+
+
+	cron 
+crontab -e 
+pega o caminho
+/projetos/myvenv/bin/python3 /projetos/CAMBOXURA/manage.py crontab run 5b42fa8a90fc8e218a703669a94ff968 # django-cronjobs for CAMBOX_URA
+
+date
+cat /tmp/teste
+
+sudo service cron start
+sudo service cron stop
+sudo service cron status
+
+
+
